@@ -4,7 +4,7 @@ class DnYtt < Formula
   desc "CLI tool to download YouTube transcripts"
   homepage "https://github.com/lazychoi/dn-youtube-transcript"
   url "https://github.com/lazychoi/dn-youtube-transcript/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  sha256 "61bdd6baf7d001fc02d24cca0f53141cefb80949a90ca1e55a77315c4b58777b"
   license "MIT"
 
   depends_on "python@3.11"
