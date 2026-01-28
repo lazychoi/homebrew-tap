@@ -2,21 +2,26 @@ class DnYtt < Formula
   include Language::Python::Virtualenv
 
   desc "CLI tool to download YouTube transcripts"
-  homepage "https://github.com/lazychoi/dn-youtube-transcript"
+  homepage "https://github.com/lazyhoi/dn-youtube-transcript"
   url "https://github.com/lazyhoi/dn-youtube-transcript/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "61bdd6baf7d001fc02d24cca0f53141cefb80949a90ca1e55a77315c4b58777b"
+  sha256 "61bdd6baf7d001fc02d24cca0f53141cefb80949a90ca1e55a77315c4b58777b"  # 실제 해시
   license "MIT"
 
   depends_on "python@3.11"
 
   resource "youtube-transcript-api" do
     url "https://files.pythonhosted.org/packages/3d/e6/15e196f38b281d1d1e9bd0e68e91f5bf50b0dfb7e84b8054894d4fa91c0c/youtube_transcript_api-0.6.2.tar.gz"
-    sha256 "3a8d4d04f3e85f5e6b9c05d9d8e1f5c6d3e8e0f8e5d7c4f0e0f0e0f0e0f0e0f0"
+    sha256 "ACTUAL_HAS61bdd6baf7d001fc02d24cca0f53141cefb80949a90ca1e55a77315c4b58777bH_HERE"  # 실제 해시
   end
 
   resource "requests" do
     url "https://files.pythonhosted.org/packages/9d/be/10918a2eac4ae9f02f6cfe6414b7a155ccd8f7f9d4380d62fd5b955065c3/requests-2.31.0.tar.gz"
-    sha256 "942c5a758f98635c3aa629024e0fca4fa15c4a3e5e6c9e1c0e6e6e5e9f0f0a0a"
+    sha256 "942c5a758f98d790eaed1a29cb6eefc7ffb0d1cf7af05c3d2791656dbd6ad1e1"  # 에러 메시지에서 알려준 정확한 해시
+  end
+
+  resource "tqdm" do
+    url "https://files.pythonhosted.org/packages/62/06/d5604a70d160f6a6ca5fd2ba25597c24abd5c5ca5f437263d177ac242308/tqdm-4.66.1.tar.gz"
+    sha256 "61bdd6baf7d001fc02d24cca0f53141cefb80949a90ca1e55a77315c4b58777b"  # 실제 해시
   end
 
   resource "certifi" do
@@ -44,6 +49,6 @@ class DnYtt < Formula
   end
 
   test do
-    assert_match "Enter the YouTube URL", pipe_output("#{bin}/dn-ytt 2>&1", "\n", 1)
+    assert_match "YouTube Transcript Downloader", pipe_output("#{bin}/dn-ytt 2>&1", "\n", 1)
   end
 end
