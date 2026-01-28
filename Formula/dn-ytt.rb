@@ -10,8 +10,8 @@ class DnYtt < Formula
   depends_on "python@3.11"
 
   resource "youtube-transcript-api" do
-    url "https://files.pythonhosted.org/packages/source/y/youtube-transcript-api/youtube-transcript-api-0.6.2.tar.gz"
-    sha256 "109e90bd3054a20e25c56c032df2e2d5e8ba11f91a921c4f70a5e5488952c79b"
+    url "https://files.pythonhosted.org/packages/87/03/68c69b2d3e282d45cb3c07e5836a9146ff9574cde720570ffc7eb124e56b/youtube_transcript_api-1.2.3.tar.gz"
+    sha256 "76016b71b410b124892c74df24b07b052702cf3c53afb300d0a2c547c0b71b68"
   end
 
   resource "requests" do
