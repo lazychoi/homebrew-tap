@@ -4,24 +4,24 @@ class DnYtt < Formula
   desc "CLI tool to download YouTube transcripts"
   homepage "https://github.com/lazyhoi/dn-youtube-transcript"
   url "https://github.com/lazyhoi/dn-youtube-transcript/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "61bdd6baf7d001fc02d24cca0f53141cefb80949a90ca1e55a77315c4b58777b"  # 실제 해시
+  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   license "MIT"
 
   depends_on "python@3.11"
 
   resource "youtube-transcript-api" do
     url "https://files.pythonhosted.org/packages/3d/e6/15e196f38b281d1d1e9bd0e68e91f5bf50b0dfb7e84b8054894d4fa91c0c/youtube_transcript_api-0.6.2.tar.gz"
-    sha256 "ACTUAL_HAS61bdd6baf7d001fc02d24cca0f53141cefb80949a90ca1e55a77315c4b58777bH_HERE"  # 실제 해시
+    sha256 "109e90bd3054a20e25c56c032df2e2d5e8ba11f91a921c4f70a5e5488952c79b"
   end
 
   resource "requests" do
     url "https://files.pythonhosted.org/packages/9d/be/10918a2eac4ae9f02f6cfe6414b7a155ccd8f7f9d4380d62fd5b955065c3/requests-2.31.0.tar.gz"
-    sha256 "942c5a758f98d790eaed1a29cb6eefc7ffb0d1cf7af05c3d2791656dbd6ad1e1"  # 에러 메시지에서 알려준 정확한 해시
+    sha256 "942c5a758f98d790eaed1a29cb6eefc7ffb0d1cf7af05c3d2791656dbd6ad1e1"
   end
 
   resource "tqdm" do
     url "https://files.pythonhosted.org/packages/62/06/d5604a70d160f6a6ca5fd2ba25597c24abd5c5ca5f437263d177ac242308/tqdm-4.66.1.tar.gz"
-    sha256 "61bdd6baf7d001fc02d24cca0f53141cefb80949a90ca1e55a77315c4b58777b"  # 실제 해시
+    sha256 "d88e651f9db8d8551a62556d3cff9e3034274ca5d66e93197cf2490e2dcb69c7"
   end
 
   resource "certifi" do
