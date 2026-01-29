@@ -24,6 +24,11 @@ class DnYtt < Formula
     sha256 "d88e651f9db8d8551a62556d3cff9e3034274ca5d66e93197cf2490e2dcb69c7"
   end
 
+  resource "defusedxml" do
+    url "https://files.pythonhosted.org/packages/source/d/defusedxml/defusedxml-0.7.1.tar.gz"
+    sha256 "1bb3032db185915b62d7c6209c5a8792be6a32ab2fedacc84e01b52c51aa3e69"
+  end
+
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/source/c/certifi/certifi-2024.2.2.tar.gz"
     sha256 "0569859f95fc761b18b45ef421b1290a0f65f147e92a1e5eb3e635f9a5e4e66f"
